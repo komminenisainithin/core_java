@@ -1,0 +1,115 @@
+->In Java Control Structures are used to control the flow of execution in a program
+->We have three categories for Control Structures
+
+            -> Decision Making Statements (Conditional Statements)
+
+                -> if 
+                -> if-else
+                -> else if ladder
+                -> switch 
+
+            -> Looping Statements (Iteration Statements)
+
+                -> while
+                -> do while
+                -> for
+
+            -> Branching Statements (Jump Statements)
+
+                -> break
+                -> continue
+                -> return
+
+    Conditional Statements:-
+        ->Evaluate a condition(-> boolean), execute different blocks of Code based on whether the condition is true or false.
+
+        ->if
+            Execute a block of code if condition is true
+            syntax:
+                if(condition){
+                    //Statements
+                }
+        ->if-else
+            Execute one block of code if condition is true, another block of code if condition is false.
+            syntax:
+                if(condition){
+                    //Statements
+                }else{
+                    //Statements
+                }
+        ->else if ladder
+            Allows multiple conditions to be checked
+            syntax:
+                if(condition){
+                    //Statements
+                }else if(condition){
+                    //Statements
+                }.
+                .
+                .
+                .else{
+                    //Statements
+                }
+
+        -> switch 
+            -> Allows multiple conditions to be checked
+            -> We can use fall through behavior where we can assign multiple values
+            -> we also have new switch-case from java 8 onwards, where we can use arrow operator ->
+            syntax1:
+                switch (variable) {
+                    case VALUE1:
+                        // ...
+                        break;
+                    case VALUE2:
+                    case VALUE3:
+                        // grouped cases
+                        break;
+                    default:
+                        // when none match
+                }
+            syntax2:
+                var grade = switch (score) {
+                    case 90 -> 'A';
+                    case 80 -> 'B';
+                    default -> 'C';
+                };
+        
+        NOTE: We can also use nested conditions, condition inside another condition
+
+
+-> Looping Statements / Iteration Statements
+
+        -> Loops will help you a block of code to executed repeatedly, based on a condition
+
+        -> Types Of Loops
+
+            -> for loop - when you already know in advance, how many times you need to execute the block of code
+
+                syntax:
+                    for (initialization; condition; update) {
+                        // loop body
+                    }        
+
+            -> while loop - runs block of code, as long as the condition is true
+
+                syntax:
+                    while (condition) {
+                        // loop body
+                    }
+            
+            -> do-while loop - similar to while, but run the code at least once, even before checking the condition
+
+            syntax:
+                do {
+                    // loop body
+                } while (condition);
+
+
+    -> Branching Statements 
+
+        -> break - exits the loop, when used with for, while, 
+            do-while or switch 
+
+        -> continue - skip the current Iteration 
+
+        -> return - returns a value
