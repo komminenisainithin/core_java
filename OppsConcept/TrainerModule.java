@@ -21,7 +21,7 @@ public class TrainerModule {
         totalSections = sc.nextInt();
         totalslary = totalSections*perSection;
         StudentModule studentReview = new StudentModule();
-        byte review = studentReview.studentRewiew;
+        byte review = studentReview.studentReview;
         switch (review) {
             case 5:
                 totalslary += 5000;
@@ -51,8 +51,9 @@ public class TrainerModule {
     public void TrainerReview(){
         System.out.println("Trainer ID:"+ trainerId);
         System.out.println("Trainer Name:"+ trainerName);
-        System.out.println("Total Section Handled: "+ totalSections);
+       
         System.out.println("Total salary"+ calculateSalary());
+         System.out.println("Total Section Handled: "+ totalSections);
     }
 
 }

@@ -9,7 +9,8 @@ public class StudentModule {
     int TotalMarks;
     int TotalSubjects;
     byte totalCradits;
-    byte studentRewiew;
+    double precentage;
+    byte studentReview;
     char continueInput = 'y';
     Scanner sc = new Scanner(System.in);
     public void greetStudent(){
@@ -38,7 +39,7 @@ public class StudentModule {
         }
         int Marks = TotalSubjects*100;
         // double averageMarks = (double) TotalMarks/TotalSubjects;
-        double precentage=((double)TotalMarks/Marks)*100;
+        precentage=((double)TotalMarks/Marks)*100;
         if (precentage >= 85){
             return 5;
         }else if(precentage >=60){
@@ -53,6 +54,7 @@ public class StudentModule {
         System.out.println("Student Name:"+ studentNmae);
         System.out.println("Total Marks:"+ TotalMarks);
         System.out.println("Total Subjects:"+ TotalSubjects);
+        System.out.println("Percentage:"+ precentage);
         System.out.println("Total Cradits:"+ totalCradits);
 
         if (totalCradits >=10) {
@@ -66,9 +68,9 @@ public class StudentModule {
 
     }
 
-    public void StudentRewiew(){
+    public void StudentReview(){
         System.out.println("Enter Student Rewiew (1-5)");
-        studentRewiew = sc.nextByte();
+        studentReview = sc.nextByte();
        
         
     }
