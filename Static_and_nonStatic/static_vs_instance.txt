@@ -56,3 +56,36 @@
     Cannot use this keyword (no object is associated).
 
     Called using the class name (though objects can call them, it’s not recommended).
+
+
+
+->Static Block :
+    A block of code inside a class marked with static { }.
+
+    Belongs to the class, not an object.
+
+    Runs only once when the class is loaded into JVM memory.
+
+    ->Used to:
+
+        Initialize static variables.
+
+        Perform one-time setup before any object is created or main() runs.
+
+
+ ->Instance Block :
+    A block of code inside a class without static keyword.
+
+    Belongs to an object.
+
+    Runs every time an object is created.
+
+    Runs before the constructor.
+
+    ->Used to:
+
+        Initialize instance variables.
+
+        Common initialization code for multiple constructors.
+        
+    Without object creation → instance block won’t run.
