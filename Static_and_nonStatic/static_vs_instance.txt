@@ -1,0 +1,58 @@
+->Instance variable
+
+    // Belongs to each object separately.
+
+    // Always starts at 0 for every new object.
+
+    // So each new object’s instanceCount will be 1 after constructor runs.
+
+    // it store in heap arer
+
+
+->staticCount
+
+    // Belongs to the class.
+
+    // One single copy is shared among all objects.
+
+    // Every time a new object is created, the same staticCount is increased.
+
+    // it store in memory area
+
+
+->output of this code
+
+    // Instance Count: 1 | Static Count: 1
+    // Instance Count: 1 | Static Count: 2
+    // Instance Count: 1 | Static Count: 3
+
+
+->Instance Methods:
+
+    ->Belong to an object (instance) of a class.
+
+    ->Can access both:
+
+        ->Instance variables
+
+        ->Static variables
+
+    ->Need an object to call them (cannot be called without an object unless you call from inside the same class in a non-static way).
+
+    ->Have access to this keyword (because they work with an object).
+
+->Static Methods
+
+    Belong to the class, not to an object.
+
+    Can only directly access:
+
+    Static variables
+
+    Other static methods
+
+    Cannot directly access instance variables or instance methods (need an object for that).
+
+    Cannot use this keyword (no object is associated).
+
+    Called using the class name (though objects can call them, it’s not recommended).

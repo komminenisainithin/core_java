@@ -1,0 +1,63 @@
+->Strings
+    ->A String in Java is a class in the java.lang package used to represent a sequence of characters.
+    
+    ->Strings are immutable: once created, they cannot be changed.
+
+    ->Stored in a special memory area called the String Constant Pool.
+
+    ->Creating Strings
+
+        ->String s1 = "Hello";
+
+    ->Stored in the String pool.
+
+    ->Reuses existing objects if the same literal is already present.
+
+    ->Using new keyword
+
+        ->String s2 = new String("Hello");
+
+    ->Always creates a new object in heap memory (even if same value exists in pool).
+
+    ->Common String Methods:
+
+        ->StringNmae.length() ->Returns number of characters
+
+        ->Str.charAt(i) ->Gets character at index
+
+        ->str.substring(i,j) ->Gets substring from i to j-1
+
+        ->str1.equals(str2) ->Checks value equality
+
+        ->str.equalsIgnoreCase() ->Case-insensitive comparison
+
+        ->str.compareTo() ->Lexicographical compare. ( s1.compareTo(s2) )
+    
+        ->str.toUpperCase() ->Converts to upper case
+
+        ->str.toLowerCase()  ->Converts to lower case
+
+        ->str.trim() ->Removes leading/trailing spaces
+
+        ->strreplace(a,b) ->Replaces character a with b
+
+        ->str.contains()  ->Checks if string contains a value
+
+        ->str.startsWith() / str.endsWith()  ->Checks start or end of string
+    
+        ->str.indexOf() / str.lastIndexOf()  ->Finds index of characters
+
+    ->For mutable strings (strings that can be changed without creating new ones):
+        ->. StringBuilder sb = new StringBuilder("Hi");
+            sb.append(" there");
+            System.out.println(sb); // "Hi there"
+
+    ->Splitting Strings
+
+        ->  String data = "apple,banana,grape";
+            String[] fruits = data.split(",");
+            System.out.println(fruits[1]); // banana
+    ->
+    
+
+
