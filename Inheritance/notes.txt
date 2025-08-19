@@ -1,0 +1,95 @@
+->Inheritance
+    ->Inheritance allows one class to inherit traits from another class
+
+    ->Inherit Properties(Variables) & Methods
+
+    ->One who inherits is called Child Class
+
+    -> One who gives the Properties & Methods is called as Parent Class
+
+    -> Child can inherit Parent, but not vice versa
+
+     -> Inheritance is achieved by creating a Relationship between classes
+
+        -> Relationship between classes is done using extends keyword
+
+        -> Child will extends Parent
+
+    -> With Inheritance
+
+        -> Code Reusability
+        -> No Code Duplication i.e No Repeatability
+        -> Project Size is Less as Code is Less
+        -> Code Reliability Increases
+        -> Code Maintainability Improved
+
+    -> Types Of Inheritance
+
+         -> Single Level Inheritance
+
+             -> A class inherits from another single class only
+
+            -> A extends B 
+                A -> B (Guest -> VideoAdmin)
+
+        -> Multilevel Inheritance:
+
+            ->A class inherits from another class, which is itself inherited from another class.
+
+            A->B (A extends B)
+
+            B->c(B extends C)
+
+            A->B->C
+
+        ->Hierarchical Inheritance
+
+            ->Multiple classes inherit from the same parent.
+
+            A->B (A extends B)
+
+            A->C (A extends C)
+
+            A->D (A extends D)
+        
+        ->Multiple inheritance:
+
+            Multiple inheritance (through classes) is not supported in Java (to avoid ambiguity of the diamond problem).
+
+            But Multiple Inheritance is possible through interfaces.
+
+            Java does not allow a class to inherit from more than one class.
+
+            Reason: To avoid ambiguity (diamond problem).
+
+            ->Multiple Inheritance through Interfaces:
+
+                Java allows multiple inheritance with interfaces, because:
+
+                Interfaces only declare methods (no method body in older versions, except default / static).
+
+                The implementing class provides the actual implementation, avoiding ambiguity.
+
+                A is class, B and C are interfaces
+
+                D->A,B,C( D extends A implements B,C )
+
+        ->super keyword:
+
+            The super keyword is used to refer to the parent (superclass) of the current object.
+
+            It helps when a child class inherits from a parent class.
+
+            super() is used to explicitly call the parent constructor from a child constructor.
+
+            If we don’t write it, Java automatically calls the default constructor of the parent.
+
+            super.variable → access parent’s variable.
+
+            super.method() → call parent’s method (even if overridden).
+
+            super() → call parent’s constructor (must be first in child constructor).
+            
+
+
+
