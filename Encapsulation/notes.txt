@@ -1,0 +1,68 @@
+Access Modifiers:
+    ->Access Modifiers in Java define how and where classes, methods, and variables can be accessed. They control visibility.
+
+    ->We Have Following Access Modifiers
+
+        -> Public
+        -> Private
+        -> Protected
+        -> Default
+
+    public :
+
+        ->Accessible from anywhere (inside the same class, same package, different package, subclass, outside the package).
+
+        ->Used when you want your class/method/variable to be available globally.
+
+    protected :
+
+        Accessible within:
+
+            Same class
+
+            Same package
+
+            Subclasses (even in different packages)
+
+        Used when you want to give limited access but allow inheritance.
+
+    default :
+        Accessible only within the same package.
+
+        Not accessible from outside the package (even subclasses).
+
+        Used for package-level encapsulation.
+
+    private ;
+
+        Accessible only within the same class.
+
+        Cannot be accessed from subclass, package, or outside world.
+
+        Used for encapsulation (hide sensitive data).
+
+
+        | Modifier      | Same Class | Same Package | Subclass (diff pkg) | Other Packages |
+        | ------------- | ---------- | ------------ | ------------------- | -------------- |
+        | **public**    | ✅ Yes      | ✅ Yes        | ✅ Yes             | ✅ Yes         |
+        | **protected** | ✅ Yes      | ✅ Yes        | ✅ Yes             | ❌ No          |
+        | **default**   | ✅ Yes      | ✅ Yes        | ❌ No              | ❌ No          |
+        | **private**   | ✅ Yes      | ❌ No         | ❌ No              | ❌ No          |
+
+->Encapsulation :
+
+    Binding data (variables) and methods (functions) together in a single unit (class) and restricting direct access to the data.
+    
+    Keep variables private (hidden from outside classes).
+
+    Provide public getter and setter methods to control how data is accessed or modified.
+
+    Make variables private.
+
+    Use public getter and setter methods to access/update them.
+    
+    Ensures security (no direct modification).
+    
+    Provides control over how values are set (e.g., add validation).
+    
+    Makes the code flexible and maintainable.
